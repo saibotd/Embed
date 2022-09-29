@@ -1,5 +1,5 @@
 <?php
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace Embed\Adapters\Youtube;
 
@@ -11,6 +11,7 @@ class Extractor extends Base
     {
         return [
             'feeds' => new Detectors\Feeds($this),
+            'shorts' => new Detectors\Shorts($this),
         ];
     }
 }
